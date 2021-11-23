@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "14cdecfe-28d9-4371-9b42-29eafde912e2": {
+      "ProjectGuid": "14cdecfe-28d9-4371-9b42-29eafde912e2",
+      "DisplayName": "webApiWeather",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}
