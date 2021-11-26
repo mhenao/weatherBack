@@ -30,6 +30,7 @@ namespace webApiWeather.Controllers
                 if (response != null)
                 {
                     var jsonString = await response.Content.ReadAsStringAsync();
+                    Console.WriteLine(jsonString);
                     return JsonConvert.DeserializeObject<object>(jsonString);
                 }
                 else
@@ -110,10 +111,10 @@ namespace webApiWeather.Controllers
         [HttpPost]
         public async Task<object> Create(Weather weather)
         {
+            Console.WriteLine("Hola soy la consola");
             Weather.Add(weather);
             return await this.QueryData(weather.city_name);
             
-
         }
     }
 }
